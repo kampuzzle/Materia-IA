@@ -57,4 +57,25 @@ Nessa representação, cada linha da tabela corresponde a um item, e cada coluna
   * Os k-itemsets freqüentes de cada passo são identificados
   * A solução final é dada pela união dos conjuntos $L_k$ de *k-itemsets* freqüentes
 
+---
+
+## Coisas do gabarito
+
+### Suporte
+
+Mede a frequância com que um padrão ocorre no conjunto de dados
+
+**Suporte = Numero de transações contendo A e B (ou apenas A) / Numero total de transações**
+
+### Confiaça
+
+Mede a proporção de transações que contem B entre as transações que contem A
+
+**Confiança = Numero de transações contendo A e B / Numero de transações contendo A**
+
+### Elevação
+
+O quanto a ocorrenciade B é dependente de A, em comparação com sua ocorrencia no dataset
+
+**Elevação = Suporte de A e B / Suporte de A * Suporte de B**
 

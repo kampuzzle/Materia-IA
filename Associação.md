@@ -44,6 +44,17 @@ Nessa representação, cada linha da tabela corresponde a um item, e cada coluna
 
 ### K Itemsets Frequentes
 
+* se referem a conjuntos de itens que ocorrem com frequência em uma base de dados.
+* O valor de K indica o número de itens no conjunto. Esses conjuntos de itens são considerados importantes na mineração de dados, pois revelam associações e padrões de coocorrência entre os elementos.
+* Para identificar os K itemsets frequentes, é comum usar algoritmos como o Apriori ou o FP-Growth.
+* Esses algoritmos exploram a propriedade de monotonicidade de frequência, onde um subconjunto de itens frequente também é frequente.
+* **Apriori:**
+  * um dos algoritmos mais populares para a descoberta de regras de associação. Ele funciona em etapas iterativas, começando com itemsets de tamanho 1 (conjuntos de itens individuais) e expandindo-os gradualmente até encontrar os itemsets frequentes desejados. O Apriori utiliza a propriedade de monotonicidade de frequência, onde um subconjunto de itens frequente também é frequente. Ele é eficiente para encontrar itemsets frequentes, mas pode ser computacionalmente custoso em bases de dados grandes.
+  * Inicialmente o algoritmo conta a ocorrência de itens, determinando os 1-itemsets freqüentes que são armazenados em L1
+  * Em cada passo k, o algoritmo é dividido em duas etapas
+  * Na primeira etapa, o conjunto de itemsets freqüentes $L_{k-1}$ obtido no passo *(k – 1)* é utilizado para gerar o conjunto de *k-itemsets* candidatos $C_k$
+  * Na segunda etapa, a Base de Dados é percorrida para determinar o valor do suporte dos *k-itemsets* candidatos em $C_k$
+  * Os k-itemsets freqüentes de cada passo são identificados
+  * A solução final é dada pela união dos conjuntos $L_k$ de *k-itemsets* freqüentes
 
-  
 

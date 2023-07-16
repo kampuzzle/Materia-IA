@@ -34,7 +34,7 @@ $Y = β_0 + β_1X_1 + β_2X_2 + ... + β_nX_n$
 
 ## Regressao linear multivariada
 
-Extensão da regressão linear simples, na qual existem múltiplas variáveis independentes (também chamadas de variáveis preditoras) para prever uma variável dependente (também chamada de variável resposta).
+Extensão da regressão linear simples, na qual existem múltiplas variáveis independentes (também chamadas de variáveis preditoras) para prever varias variáveis dependentes (também chamada de variável resposta).
 
 Entrada e saída multidimensionais, X é o vetor de características e Y é o vetor de resultados.
 
